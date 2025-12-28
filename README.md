@@ -32,7 +32,6 @@ The renderer implements a PBR-inspired shading model to ensure visual consistenc
 One of the core challenges addressed was the correct implementation of normal mapping.
 The BasicVertexShader passes world-space tangent and bitangent vectors to the pixel shader, where they are used to construct the TBN matrix.
 
-$$TBN = \begin{bmatrix} T_x & B_x & N_x \\ T_y & B_y & N_y \\ T_z & B_z & N_z \end{bmatrix}$$
 
 This allows the sampled normal from the texture to be correctly oriented in world space,
 significantly enhancing visual fidelity without increasing vertex counts.
